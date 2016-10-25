@@ -1,6 +1,7 @@
 'use strict';
+import {mdTablePaginationTemplate} from "../templates/mdTablePaginationTemplate";
 
-angular.module('md.data.table').directive('mdTablePagination', mdTablePagination);
+angular.module('ng1.md.data.table').directive('mdTablePagination', mdTablePagination);
 
 function mdTablePagination() {
 
@@ -125,6 +126,6 @@ function mdTablePagination() {
     controllerAs: '$pagination',
     restrict: 'E',
     scope: {},
-    templateUrl: 'md-table-pagination.html'
+    template: mdTablePaginationTemplate
   };
 }

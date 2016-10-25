@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('md.data.table').directive('mdBody', mdBody);
+angular.module('ng1.md.data.table').directive('mdBody', mdBody);
 
 function mdBody() {
 

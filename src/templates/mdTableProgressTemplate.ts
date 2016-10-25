@@ -1,5 +1,6 @@
-<tr>
+export const mdTableProgressTemplate = `<tr>
   <th colspan="{{columnCount()}}">
     <md-progress-linear ng-show="deferred()" md-mode="indeterminate"></md-progress-linear>
   </th>
 </tr>
+`;

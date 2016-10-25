@@ -1,6 +1,7 @@
 'use strict';
+import {mdTableProgressTemplate} from "../templates/mdTableProgressTemplate";
 
-angular.module('md.data.table').directive('mdTableProgress', mdTableProgress);
+angular.module('ng1.md.data.table').directive('mdTableProgress', mdTableProgress);
 
 function mdTableProgress() {
 
@@ -14,6 +15,6 @@ function mdTableProgress() {
     require: '^^mdTable',
     restrict: 'C',
     scope: {},
-    templateUrl: 'md-table-progress.html'
+    template: mdTableProgressTemplate
   };
 }

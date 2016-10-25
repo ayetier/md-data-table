@@ -1,6 +1,5 @@
-// support for Browserify
 
 require('angular-material');
-require('./dist/md-data-table');
+require('./dist/md-table');
 
-module.exports = 'md.data.table';
+module.exports = 'ng.1md.data.table';

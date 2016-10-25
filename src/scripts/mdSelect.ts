@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('md.data.table').directive('mdSelect', mdSelect);
+angular.module('ng1.md.data.table').directive('mdSelect', mdSelect);
 
 function mdSelect($compile, $parse) {
 

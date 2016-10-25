@@ -1,3 +1,4 @@
+export const mdTablePaginationTemplate = `
 <div class="page-select" ng-if="$pagination.showPageSelect()">
   <div class="label">{{$pagination.label.page}}</div>
 
@@ -35,3 +36,4 @@
     <md-icon md-svg-icon="navigate-last.svg"></md-icon>
   </md-button>
 </div>
+`;

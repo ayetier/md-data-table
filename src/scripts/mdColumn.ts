@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('md.data.table').directive('mdColumn', mdColumn);
+angular.module('ng1.md.data.table').directive('mdColumn', mdColumn);
 
 function mdColumn($compile, $mdUtil) {
 
@@ -14,7 +14,8 @@ function mdColumn($compile, $mdUtil) {
     var tableCtrl = ctrls.shift();
 
     function attachSortIcon() {
-      var sortIcon = angular.element('<md-icon md-svg-icon="arrow-up.svg">');
+      var iconFont = (scope.icon) ? scope.icon : 'arrow_drop_up';
+      var sortIcon = angular.element(`<md-icon >${iconFont}</md-icon>`);
 
       $compile(sortIcon.addClass('md-sort-icon').attr('ng-class', 'getDirection()'))(scope);
 
@@ -120,7 +121,8 @@ function mdColumn($compile, $mdUtil) {
     restrict: 'A',
     scope: {
       numeric: '=?mdNumeric',
-      orderBy: '@?mdOrderBy'
+      orderBy: '@?mdOrderBy',
+      icon:'@?mdSortIcon'
     }
   };
 }
